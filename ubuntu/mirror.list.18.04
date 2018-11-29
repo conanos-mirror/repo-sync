@@ -1,0 +1,19 @@
+############# config ##################
+set base_path /dev/data/ubuntu/16.04
+
+set mirror_path  $base_path/mirror
+set skel_path $base_path/skel
+set var_path    $base_path/var
+set cleanscript $var_path/clean.sh
+set nthreads    20
+set _tilde 0
+#
+############# end config ##############
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+clean http://mirrors.aliyun.com/ubuntu

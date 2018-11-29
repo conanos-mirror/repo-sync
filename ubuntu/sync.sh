@@ -5,7 +5,10 @@ sudo mkdir -p /dev/data/ubuntu/18.04 /dev/data/ubuntu/18.04/mirror /dev/data/ubu
 sudo apt-get update
 sudo apt-get install -y apt-mirror
 
-cp -f /etc/apt/mirror.list  /etc/apt/mirror.list.bak 
+sudo cp -f /etc/apt/mirror.list  /etc/apt/mirror.list.bak 
 sudo cp -f mirror.list.18.04 /etc/apt/mirror.list
+sudo apt-mirror
+sudo cp -f mirror.list.16.04 /etc/apt/mirror.list
+sudo apt-mirror
 
-cp -f /etc/apt/sources.list  /etc/apt/sources.list.bak 
+

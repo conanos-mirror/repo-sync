@@ -1,0 +1,5 @@
+deb [arch=amd64] http://172.16.65.42/ubuntu/18.04 bionic main restricted universe multiverse
+deb [arch=amd64] http://172.16.65.42/ubuntu/18.04 bionic-security main restricted universe multiverse
+deb [arch=amd64] http://172.16.65.42/ubuntu/18.04 bionic-updates main restricted universe multiverse
+deb [arch=amd64] http://172.16.65.42/ubuntu/18.04 bionic-proposed main restricted universe multiverse
+deb [arch=amd64] http://172.16.65.42/ubuntu/18.04 bionic-backports main restricted universe multiverse

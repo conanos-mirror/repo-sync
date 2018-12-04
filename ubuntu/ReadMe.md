@@ -25,3 +25,9 @@ sudo reboot
 df -h
 
 >/dev/sdb                         3.6T   89M  3.4T   1% /dev/data
+
+
+## install package from source (on another machine)
+sudo cp -f  ubuntu/16.04/sources.list /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get upgrade

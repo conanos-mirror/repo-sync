@@ -1,5 +1,5 @@
 ############# config ##################
-set base_path /dev/data/ubuntu/16.04
+set base_path /dev/data/ubuntu/18.04
 
 set mirror_path  $base_path/mirror
 set skel_path $base_path/skel

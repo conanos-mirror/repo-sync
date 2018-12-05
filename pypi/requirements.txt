@@ -1,1 +1,4 @@
-cam
+conan
+conan_package_tools
+shell
+bincrafters_package_tools

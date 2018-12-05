@@ -1,33 +1,19 @@
-## add new hard disk
-sudo  fdisk  -l
+## sync ubuntu sources to harddisk
+```bash
+sudo ./sync.sh
+```
 
->Disk **/dev/sdb: 3.7 TiB**, 4000787030016 bytes, 7814037168 sectors
->Units: sectors of 1 * 512 = 512 bytes
->Sector size (logical/physical): 512 bytes / 4096 bytes
->I/O size (minimum/optimal): 4096 bytes / 4096 bytes
-## format (do only once!!!)
-
-sudo mkfs.ext4  /dev/sdb
-
-sudo blkid
-
->/dev/sdb: UUID="802ebf39-72c2-48ca-a626-d4e9afc02ae7" TYPE="ext4"
-
-## mount
-mkdir ~/data_disk
-sudo su
-echo 'UUID=802ebf39-72c2-48ca-a626-d4e9afc02ae7       /dev/data      ext4    defaults        0       0' >>/etc/fstab
-
-sudo chmod -R 4755 /dev/data
-
-sudo reboot
-
-df -h
-
->/dev/sdb                         3.6T   89M  3.4T   1% /dev/data
-
+## start a webserver to provide apt source
+```bash
+sudo ./service.sh
+```
+A apache service will start and you can see the source via browser: `http://172.16.65.42/ubuntu/`.
 
 ## install package from source (on another machine)
+Modify the source ip in `sources.list` and run the code:
+
+```bash
 sudo cp -f  ubuntu/16.04/sources.list /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get upgrade
+```

@@ -1,5 +1,5 @@
 #! /bin/bash
-sudo pip3 uninstall pip2pi
+sudo pip3 uninstall -y pip2pi
 sudo rm -rf pip2pi
 sudo git clone https://github.com/yjjnls/pip2pi.git
 cd pip2pi
